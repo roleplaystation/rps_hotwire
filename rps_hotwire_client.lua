@@ -51,7 +51,6 @@ Citizen.CreateThread(function()
 		Citizen.Wait(0)
 		if GetSeatPedIsTryingToEnter(player_entity) == -1 then
 			vehicle = GetVehiclePedIsTryingToEnter(player_entity)
-			Citizen.Wait(500)
 			if IsVehicleNeedsToBeHotwired(vehicle) then
 				disableEngine()
 				hotwiring = true
